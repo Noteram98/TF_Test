@@ -11,7 +11,7 @@ provider "docker" {
 }
 
 variable "image_name" {
-  default = "team4"
+  default = "zodiac"
 }
 
 variable "container_name" {
