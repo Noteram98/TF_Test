@@ -1,8 +1,11 @@
 # Calcolatore dei segni zodiacali cinesi con Iaac Terraform
 ## Un calcolatore che, inserendo il proprio anno di nascita, ci ridarà l'animale del nostro anno e ci dirà anche l'animale dell' anno corrente.
-## Per usare il nostro calcolatore:
+## Pre-requisiti:
+Avere minikube e terraform installati sulla propria macchina
 
-## Per usare il norsro calcolatore serve aver scaricato terraform sul proprio pc
+## Comandi per far partire il calcolatore:
+
+
 Questo comando serve ad inializzare la build di terraform 
 
 
