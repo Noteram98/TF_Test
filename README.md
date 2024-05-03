@@ -7,7 +7,7 @@ Abbiamo usato `WSL2` per creare questa app; per farla partire serve `minikube`, 
 
 # Ci sono due modi per utilizzare questo applicativo `Terraform`:
 
-## 1. Come creazione di immagine Docker 
+## 1. Come creazione di immagine Docker
 
 `cd image_app`
 
@@ -15,36 +15,22 @@ Abbiamo usato `WSL2` per creare questa app; per farla partire serve `minikube`, 
 
 `terraform apply`
 
+Ora avrai la tua immagine creata (`zodiac`) e con il comando `docker images` potrai controllarlo.
+
 ## 2. Attraverso la cartella `image_app` nella repository
+### questo passaggio è facoltativo perchè si può far partire tutto con docker run (ti invito a vedere l'altra repository `https://github.com/Noteram98/Docker_Test.git` per capire come)
 
+`minikube start`
 
+`cd service_app`
 
+`terraform init`
 
+`terraform apply`
 
-
-
-
-
-
-
-
-
--Questo comando serve per copiare e creare l'immagine per il container: `docker build -t NOME_CHE_VUOI:VERSIONE_CHE_VUOI https://github.com/Noteram98/Docker_Test.git` 
-  
--Questo comando serve per creare il container dall'immagine: `docker run -it --name NOME_DEL_CONTAINER NOME_SCELTO_PRIMA:VERSIONE_SCELTA_PRIMA`  
-
--Questo comando serve per avviare il container: `docker start NOME_DEL_CONTAINER`   
-
--Questo comando serve per entrare nel container: `docker exec -it NOME_DEL_CONTAINER bash`  
-
--Questo comando serve a far partire il programma dentro il container: `python3 programma.py`  
-
--Per uscire dal container: `exit`  
+Ora il tuo applicativo dovrebbe partire (in caso di problemi ti prego di contattarmi!)
 
 # NOTE DEV
-°Per cambiare lo script si può editare dentro la cartella `script` e modificare il file `programma.py`  
+°Cambia a tuo piacimento questo applicativo è stato fatto in un lab durante un corso e speriamo che funzioni tutto.
   
-°Nel file `Dockerfile` è possibile trovare e modificare le istruzioni per creare e inizializzare la build su docker
-  
-°Il comando `docker exec` serve solo in caso docker non entrasse in automatico dentro il container in una shell bash  
-   (riconoscibile dal `#` come simbolo della linea di codice invecxe del `$` di docker )
+°Docker non è obbilgatorio ma una vm per minikube deve essere presente sulla propria macchina.
