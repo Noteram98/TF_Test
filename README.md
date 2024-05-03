@@ -1,13 +1,21 @@
 # Calcolatore dei segni zodiacali cinesi con Iaac Terraform
 ## Un calcolatore che, inserendo il proprio anno di nascita, ci ridarà l'animale del nostro anno e ci dirà anche l'animale dell' anno corrente.
 ## Pre-requisiti:
-Avere minikube e terraform installati sulla propria macchina
+Abbiamo usato `WSL2` per creare questa app; per farla partire serve `minikube`, `docker` e `terraform` installati sulla propria macchina.
 
 ## Comandi per far partire il calcolatore:
 
+# Ci sono due modi per utilizzare questo applicativo `Terraform`:
 
-Questo comando serve ad inializzare la build di terraform 
+## 1. Come creazione di immagine Docker 
 
+`cd image_app`
+
+`terraform init`
+
+`terraform apply`
+
+## 2. Attraverso la cartella `image_app` nella repository
 
 
 
