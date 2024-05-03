@@ -13,7 +13,7 @@ provider "kubernetes" {
 }
 
 variable "app_name" {
-  default = "team4"
+  default = "zodiac"
 }
 
 variable "namespace" {
@@ -61,8 +61,7 @@ resource "kubernetes_deployment" "app_deployment" {
       spec {
         container {
           name  = var.app_name
-          image = "team4"  # Assicurati che "team4" sia il nome corretto dell'immagine Docker
-          # Aggiungi altri parametri come il mount dei volumi se necessario
+          image = "zodiac"
 
           resources {
             requests = {
@@ -111,7 +110,7 @@ resource "kubernetes_service" "app_service" {
       app = var.app_name
     }
 
-    type = "LoadBalancer"  # Esponi il servizio tramite un servizio di tipo LoadBalancer
+    type = "LoadBalancer"  # Usiamo LoadBalancer per esporre il servizio con minikube
 
     port {
       port        = 80
