@@ -34,3 +34,5 @@ Ora il tuo applicativo dovrebbe partire (in caso di problemi ti prego di contatt
 °Cambia a tuo piacimento questo applicativo è stato fatto in un lab durante un corso e speriamo che funzioni tutto.
   
 °Docker non è obbilgatorio ma una vm per minikube deve essere presente sulla propria macchina.
+
+°A noi ci ha impiegato 10+ min per partire
